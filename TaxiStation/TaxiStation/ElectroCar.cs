@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation
 {
-    public class Station
+    public class ElectroCar: Car
     {
     }
 }
