@@ -8,5 +8,14 @@ namespace TaxiStation
 {
     public class Autopark
     {
+        public long CalculateAutoparkCost(List<Car> cars)
+        {
+            long cost = 0;
+            foreach (Car car in cars)
+            {
+                cost += car.PriceCar;
+            }
+            return cost;
+        }
     }
 }
