@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation
 {
-    public class GasolineCar
+    public class VIPCar: Car
     {
-        protected  GasolineCar()
-        {
-
-        }
     }
 }

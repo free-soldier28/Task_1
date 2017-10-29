@@ -15,6 +15,12 @@ namespace TaxiStation
 
         public int PriceCar { get; set; }
         public int MaxSpeed { get; set; }
-        public int TotalMileage { get; set; }
+        public int FuelConsumption { get; set; }
+
+        public bool AirConditioning { get; set; }
+        public bool HeatingSeats { get; set; }  
+        public bool VentilationSeats { get; set; }
+        public bool ZonalClimateControl { get; set; }
+        public bool MiniBar { get; set; }
     }
 }
