@@ -17,5 +17,11 @@ namespace TaxiStation
             }
             return cost;
         }
+
+        public List<Car> SortCarsByFuelConsumption(List<Car> cars)
+        {
+            cars.Sort((car1, car2) => car1.FuelConsumption.CompareTo(car2.FuelConsumption));
+            return cars;
+        }
     }
 }
