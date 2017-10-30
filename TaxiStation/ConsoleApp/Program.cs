@@ -26,13 +26,15 @@ namespace ConsoleApp
             director.SetBuilder(basicEquipmentCarBuilder);
             director.ConstructCar(Brand.Toyota, "Camry", Carcass.Hatchback, 10500, 220, 10);
             taxistaxiStation.Add(basicEquipmentCarBuilder.GetCar());
-
-            director.SetBuilder(basicEquipmentCarBuilder);
+      
             director.ConstructCar(Brand.Volkswagen, "Golf 5", Carcass.Sedan, 8200, 210, 8);
             taxistaxiStation.Add(basicEquipmentCarBuilder.GetCar());
 
             director.SetBuilder(comfortableEquipmentCarBuilder);
             director.ConstructCar(Brand.BMW, "X5", Carcass.Crossover, 25300, 250, 15);
+            taxistaxiStation.Add(comfortableEquipmentCarBuilder.GetCar());
+
+            director.ConstructCar(Brand.Volvo, "s90", Carcass.Hatchback, 21800, 260, 12);
             taxistaxiStation.Add(comfortableEquipmentCarBuilder.GetCar());
 
             director.SetBuilder(vipCarBuilder);
