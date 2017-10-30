@@ -10,11 +10,11 @@ namespace TaxiStation.Builder
 {
     public class BasicEquipmentCarBuilder: ICarBuilder
     {
-        BasicEquipmentCar basicEquipmentCar = new BasicEquipmentCar();
+        BasicEquipmentCar basicEquipmentCar;
 
-        public void Reset()
+        public void CreateCar()
         {
-            basicEquipmentCar = null;
+            basicEquipmentCar = new BasicEquipmentCar();
         }
 
         public BasicEquipmentCar GetCar()

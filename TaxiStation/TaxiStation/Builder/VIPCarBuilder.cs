@@ -10,11 +10,11 @@ namespace TaxiStation.Builder
 {
     public class VIPCarBuilder : ICarBuilder
     {
-        VIPCar vipCar = new VIPCar();
+        VIPCar vipCar;
 
-        public void Reset()
+        public void CreateCar()
         {
-            vipCar = null;
+            vipCar = new VIPCar();
         }
 
         public VIPCar GetCar()

@@ -10,12 +10,13 @@ namespace TaxiStation.Builder
 {
     public class ComfortableEquipmentCarBuilder : ICarBuilder
     {
-        ComfortableEquipmentCar comfortableEquipmentCar = new ComfortableEquipmentCar();
+        ComfortableEquipmentCar comfortableEquipmentCar;
 
-        public void Reset()
+        public void CreateCar()
         {
-            comfortableEquipmentCar = null;
+            comfortableEquipmentCar = new ComfortableEquipmentCar();
         }
+
         public ComfortableEquipmentCar GetCar()
         {
             return comfortableEquipmentCar;

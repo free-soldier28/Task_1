@@ -18,7 +18,7 @@ namespace TaxiStation.Director
 
         public void ConstructCar(Brand brand, string model, Carcass carcass, int priceCar, int maxSpeed, int fuelConsumption)
         {
-            
+            builder.CreateCar();
             builder.SetBrand(brand);
             builder.SetModel(model);
             builder.SetCarcas(carcass);

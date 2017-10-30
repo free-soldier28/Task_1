@@ -9,7 +9,7 @@ namespace TaxiStation.Interface
 {
     public interface ICarBuilder
     {
-        void Reset();
+        void CreateCar();
         void SetBrand(Brand brand);
         void SetModel(String model);
         void SetCarcas(Carcass carcass);

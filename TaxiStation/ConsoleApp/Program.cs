@@ -24,7 +24,11 @@ namespace ConsoleApp
             VIPCarBuilder vipCarBuilder = new VIPCarBuilder();
 
             director.SetBuilder(basicEquipmentCarBuilder);
-            director.ConstructCar(Brand.Toyota, "Camry", Carcass.Hatchback, 10500, 220, 16);
+            director.ConstructCar(Brand.Toyota, "Camry", Carcass.Hatchback, 10500, 220, 10);
+            taxistaxiStation.Add(basicEquipmentCarBuilder.GetCar());
+
+            director.SetBuilder(basicEquipmentCarBuilder);
+            director.ConstructCar(Brand.Volkswagen, "Golf 5", Carcass.Sedan, 8200, 210, 8);
             taxistaxiStation.Add(basicEquipmentCarBuilder.GetCar());
 
             director.SetBuilder(comfortableEquipmentCarBuilder);
