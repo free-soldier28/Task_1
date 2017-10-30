@@ -12,7 +12,11 @@ namespace TaxiStation.Builder
     {
         ComfortableEquipmentCar comfortableEquipmentCar = new ComfortableEquipmentCar();
 
-        public ComfortableEquipmentCar GetComfortableEquipmentCar()
+        public void Reset()
+        {
+            comfortableEquipmentCar = null;
+        }
+        public ComfortableEquipmentCar GetCar()
         {
             return comfortableEquipmentCar;
         }
@@ -61,12 +65,12 @@ namespace TaxiStation.Builder
 
         public void AddZonalClimateControl()
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddMiniBar()
         {
-            throw new NotImplementedException();
+
         }
 
 

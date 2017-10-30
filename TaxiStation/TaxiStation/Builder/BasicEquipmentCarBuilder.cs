@@ -11,8 +11,13 @@ namespace TaxiStation.Builder
     public class BasicEquipmentCarBuilder: ICarBuilder
     {
         BasicEquipmentCar basicEquipmentCar = new BasicEquipmentCar();
-      
-        public BasicEquipmentCar GetBasicEquipmentCar()
+
+        public void Reset()
+        {
+            basicEquipmentCar = null;
+        }
+
+        public BasicEquipmentCar GetCar()
         {
             return basicEquipmentCar;
         }
@@ -54,22 +59,22 @@ namespace TaxiStation.Builder
 
         public void AddHeatingSeats()
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddVentilationSeats()
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddZonalClimateControl()
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddMiniBar()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

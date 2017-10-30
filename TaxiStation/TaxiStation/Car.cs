@@ -22,5 +22,11 @@ namespace TaxiStation
         public bool VentilationSeats { get; set; }
         public bool ZonalClimateControl { get; set; }
         public bool MiniBar { get; set; }
+
+        public override string ToString()
+        {
+            String carInfo = $"{Brand} {Model}";
+            return carInfo;
+        }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TaxiStation
 {
-    public class Autopark
+    public  class Autopark
     {
-        public long CalculateAutoparkCost(List<Car> cars)
+        public static long CalculateAutoparkCost(List<Car> cars)
         {
             long cost = 0;
             foreach (Car car in cars)
@@ -18,7 +18,7 @@ namespace TaxiStation
             return cost;
         }
 
-        public List<Car> SortCarsByFuelConsumption(List<Car> cars)
+        public static List<Car> SortCarsByFuelConsumption(List<Car> cars)
         {
             List<Car> newListCars = new List<Car>();
             newListCars = cars;
@@ -26,7 +26,7 @@ namespace TaxiStation
             return newListCars;
         }
 
-        public List<Car> SearchCarsBySpeed(List<Car> cars, int min, int max)
+        public static List<Car> SearchCarsBySpeed(List<Car> cars, int min, int max)
         {
             List<Car> newListCars = new List<Car>();
 

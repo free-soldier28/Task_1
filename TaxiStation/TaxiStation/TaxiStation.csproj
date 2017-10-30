@@ -49,7 +49,6 @@
     <Compile Include="Director\CarDirector.cs" />
     <Compile Include="Enum\Brand.cs" />
     <Compile Include="Enum\Carcass.cs" />
-    <Compile Include="Enum\FuelType.cs" />
     <Compile Include="Interface\ICarBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Autopark.cs" />

@@ -12,7 +12,12 @@ namespace TaxiStation.Builder
     {
         VIPCar vipCar = new VIPCar();
 
-        public VIPCar GetVIPCar()
+        public void Reset()
+        {
+            vipCar = null;
+        }
+
+        public VIPCar GetCar()
         {
             return vipCar;
         }
